@@ -1,3 +1,8 @@
+# Future Improvements
+
+    * Code Structuring: There is an opportunity to separate and split the folder components into several folders like Organism, Molecule and Atom following the Atomic Design proposal by Brad Frost.
+
+    * Additional Features: The app can have a router to improve the usability for example have a route with the topic info and the related topics.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

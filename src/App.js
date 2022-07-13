@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import { ApolloProvider } from '@apollo/client';
+import { CLIENT } from './config';
+
+import logo from './images/github.png';
+import Home from './components/home'
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+const App = () => (
+    <ApolloProvider client={CLIENT}>
+      <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} className="App-logo-github" alt="logo" />
+        <p> GitHub Topics </p>
       </header>
+      <div className="sectionTitle">  Browse popular topics on GitHub.  </div>
+      <Home />
+      <footer>
+       Aspiration@Task | Jair.Quintero
+      </footer>
     </div>
-  );
-}
+    </ApolloProvider>
+  )
 
 export default App;
